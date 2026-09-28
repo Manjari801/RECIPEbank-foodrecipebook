@@ -2,18 +2,17 @@
 
 ## Functional Requirements
 
-1. The system shall allow the user to add a new recipe.
-2. The system shall store the recipe name and cooking time.
-3. The system shall store ingredients and cooking steps.
-4. The system shall allow the user to add important cooking tips.
-5. The system shall allow the user to search for a recipe.
-6. The system shall display all saved recipes.
-7. The system shall allow the user to delete a recipe.
-8. The system shall save recipe information in a text file.
+1. Users can add new recipes to the system.
+2. The system stores recipe names, cooking times, ingredients, and cooking steps.
+3. Important cooking tips can be added and stored by the user.
+4. Recipe search functionality allows users to find saved recipes.
+5. And the system displays all saved recipes in a list.
+6. Users are able to delete recipes from the system.
+7. All recipe information gets saved in a text file.
 
 ## Non-Functional Requirements
 
-1. The system should be simple and easy to use.
-2. The system should respond quickly to user commands.
-3. The stored recipe data should remain available after restarting the program.
-4. The code should be divided into separate files for better organization.
+1. Simple and intuitive interface. Users should navigate it without confusion.
+2. The system responds quickly to user commands and handles requests without delay.
+3. Recipe data persists after the program restarts, so users don't lose their information.
+4. But the code must be organized into separate files for maintainability and clarity.
