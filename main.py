@@ -1,24 +1,18 @@
- recipe import add_recipe, search_recipe, view_recipes, delete_recipe
+from recipe import add_recipe, search_recipe, view_recipes, delete_recipe
 from storage import load_recipes, save_recipes
 
 
 load_recipes()
 
-menu = (
-    "1. Add Recipe",
-    "2. Search Recipe",
-    "3. View All Recipes",
-    "4. Delete Recipe",
-    "5. Exit"
-)
-
 
 while True:
 
     print("\n========== MY RECIPE BOOK ==========")
-
-    for option in menu:
-        print(option)
+    print("1. Add Recipe")
+    print("2. Search Recipe")
+    print("3. View All Recipes")
+    print("4. Delete Recipe")
+    print("5. Exit")
 
     choice = input("Enter your choice: ")
 
@@ -41,32 +35,31 @@ while True:
 
         print("Recipe added successfully!")
 
-
     elif choice == "2":
 
         name = input("Enter recipe name: ")
 
         recipe = search_recipe(name)
 
-        if recipe:
+        if recipe is not None:
+
             print("\nRecipe:", name)
             print("Cooking Time:", recipe["time"])
 
             print("\nIngredients:")
             for item in recipe["ingredients"]:
-                print("-", item)
+                print("-", item.strip())
 
             print("\nSteps:")
             for step in recipe["steps"]:
-                print("-", step)
+                print("-", step.strip())
 
             print("\nImportant Things:")
             for tip in recipe["tips"]:
-                print("-", tip)
+                print("-", tip.strip())
 
         else:
             print("Recipe not found.")
-
 
     elif choice == "3":
 
@@ -81,23 +74,22 @@ while True:
             for name in data:
                 print("-", name)
 
-
     elif choice == "4":
 
         name = input("Enter recipe name to delete: ")
 
-        if delete_recipe(name):
+        result = delete_recipe(name)
+
+        if result:
             save_recipes()
             print("Recipe deleted successfully.")
         else:
             print("Recipe not found.")
 
-
     elif choice == "5":
 
         print("Thank you for using My Recipe Book!")
         break
-
 
     else:
         print("Invalid choice. Please try again.")
