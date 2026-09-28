@@ -4,9 +4,7 @@ A simple Python-based Recipe Book where users can add, search, view and delete r
 
 ## Overview
 
-This project helps users keep their recipes in one place. A recipe can contain its name, cooking time, ingredients, cooking steps and important things to take care of.
-
-The project is made using basic Python concepts covered in the VITyarthi Python Essentials course.
+Users can keep their recipes in one place using this project. Each recipe stores its name, cooking time, ingredients, cooking steps and important things to take care of. It's built on basic Python concepts covered in the VITyarthi Python Essentials course.
 
 ## Features
 
@@ -22,22 +20,11 @@ The project is made using basic Python concepts covered in the VITyarthi Python 
 
 ## Technologies Used
 
-- Python 3
-- Variables and data types
-- Strings
-- Lists
-- Dictionaries
-- Tuples
-- Functions
-- Loops
-- Conditional statements
-- Modules
-- File handling
+Python 3 and core language concepts: variables and data types, strings, lists, dictionaries, tuples, functions, loops, conditional statements, modules, and file handling.
 
 ## Project Structure
 
 Recipe-Book/
-
 - main.py
 - recipe.py
 - storage.py
@@ -48,18 +35,11 @@ Recipe-Book/
 
 ## How to Run
 
-1. Install Python 3.
-2. Open the Recipe-Book folder.
-3. Open the terminal in the folder.
-4. Run:`python main.py`
-5. Select an option from the menu.
-6. Enter the required recipe details.
+Install Python 3, then open the Recipe-Book folder and launch the terminal there. Run `python main.py` to start the program. Select an option from the menu and enter the required recipe details.
 
 ## How It Works
 
-The user can add a recipe by entering its name, cooking time, ingredients, steps and important tips.
-
-The recipe is stored in the program using dictionaries and lists. The data is also saved in `recipes.txt` using file handling, so the recipes can be loaded again when the program is started.
+When you add a recipe, you enter its name, cooking time, ingredients, steps and tips. The program stores this data using dictionaries and lists. File handling saves everything to `recipes.txt`, so your recipes load automatically when you restart the program.
 
 ## Author
 
