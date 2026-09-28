@@ -2,13 +2,13 @@
 
 ## Problem Statement
 
-People often save recipes in notebooks, messages or different places, which can make them difficult to find later. This project provides a simple digital recipe book using Python.
+Recipes scattered across notebooks, messages, and random places stay lost. This project solves that with a simple digital recipe book built in Python.
 
 ## Scope
 
-The system allows users to add recipes with their cooking time, ingredients, cooking steps and important things to take care of. Users can also search, view and delete recipes.
+Users can add recipes to the system, entering cooking time, ingredients, steps, and care notes. They're able to search for recipes, view them, and delete ones they no longer need.
 
-The recipe information is stored in a text file so that it can be used again when the program is opened.
+And because recipe data is saved to a text file, everything persists when the program closes and reopens.
 
 ## Target Users
 
