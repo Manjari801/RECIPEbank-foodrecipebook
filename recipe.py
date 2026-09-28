@@ -11,7 +11,10 @@ def add_recipe(name, time, ingredients, steps, tips):
 
 
 def search_recipe(name):
-    return recipes.get(name)
+    if name in recipes:
+        return recipes[name]
+    else:
+        return None
 
 
 def view_recipes():
