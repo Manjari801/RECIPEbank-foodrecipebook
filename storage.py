@@ -1,12 +1,9 @@
 from recipe import recipes
 
-
 def save_recipes():
     file = open("recipes.txt", "w")
-
     for name in recipes:
         recipe = recipes[name]
-
         file.write(name + "~")
         file.write(recipe["time"] + "~")
         file.write(",".join(recipe["ingredients"]) + "~")
@@ -16,9 +13,9 @@ def save_recipes():
     file.close()
 
 
+
 def load_recipes():
     file = open("recipes.txt", "r")
-
     for line in file:
         data = line.strip().split("~")
 
@@ -35,5 +32,4 @@ def load_recipes():
                 "steps": steps,
                 "tips": tips
             }
-
     file.close()
