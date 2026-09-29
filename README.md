@@ -35,7 +35,12 @@ Recipe-Book/
 
 ## How to Run
 
-Install Python 3, then open the Recipe-Book folder and launch the terminal there. Run `python main.py` to start the program. Select an option from the menu and enter the required recipe details.
+- Install Python 3
+- Open the Recipe-Book folder and launch the terminal there.
+- Run `python main.py` to start the program.
+- Select an option from the menu and enter the required recipe details.
+- if error occurs type cd "RECIPEbank-foodrecipebook-main" in terminal 
+- then type python main.py to run the program.
 
 ## How It Works
 
